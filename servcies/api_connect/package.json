@@ -1,0 +1,16 @@
+{
+  "name": "api_connect",
+  "version": "1.0.0",
+  "description": "ssh and jdbc connect api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-router": "^7.2.1",
+    "mysql2": "^1.3.5"
+  }
+}

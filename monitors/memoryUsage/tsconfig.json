@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "outDir": "./memoryUsage/lib"
+  },
+  "include": [
+    "../src/*.ts"
+  ],
+  "files": [
+    "src/api-config.ts",
+    "src/api-connect.ts",
+    "src/api-es.ts",
+    "src/execute-command.ts",
+    "src/monitor-memoryUsage.ts"
+  ]
+}
