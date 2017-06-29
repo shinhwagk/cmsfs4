@@ -15,8 +15,12 @@ ADD api-error.ts .
 ADD api-es.ts .
 ADD execute-command.ts .
 
-RUN tsc
-
 ADD index.js index.js
 
-CMD node lib/monitor-memoryUsage.js
+CMD node lib/main.js
+
+ENV monitor
+
+ADD monitor-${monitor} main.ts
+
+RUN tsc

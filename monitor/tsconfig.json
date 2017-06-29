@@ -2,5 +2,13 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es6"
-  }
+  },
+  "files": [
+    "api-config.ts",
+    "api-connect.ts",
+    "api-error.ts",
+    "api-es.ts",
+    "execute-command.ts",
+    "main.ts"
+  ]
 }
