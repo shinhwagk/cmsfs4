@@ -1,5 +1,7 @@
 FROM node:8.1.2
 
+ARG monitor
+
 RUN npm i -g typescript
 
 RUN mkdir /opt/cmsfs
@@ -15,12 +17,8 @@ ADD api-error.ts .
 ADD api-es.ts .
 ADD execute-command.ts .
 
-ADD index.js index.js
-
 CMD node lib/main.js
 
-ENV monitor
-
-ADD monitor-${monitor} main.ts
+ADD monitor-${monitor}.ts main.ts
 
 RUN tsc
