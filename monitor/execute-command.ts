@@ -1,8 +1,6 @@
 import * as ssh2 from 'ssh2';
 
-export interface ConnectConfig extends ssh2.ConnectConfig {
-
-}
+export interface ConnectConfig extends ssh2.ConnectConfig {}
 
 export function executeCommand(connect: ConnectConfig, command: string): Promise<string> {
   return new Promise((resolve, reject) => {
