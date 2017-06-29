@@ -13,6 +13,9 @@ ADD api-config.ts .
 ADD api-connect.ts .
 ADD api-error.ts .
 ADD api-es.ts .
+ADD execute-command.ts .
+
+RUN tsc
 
 ADD index.js index.js
 

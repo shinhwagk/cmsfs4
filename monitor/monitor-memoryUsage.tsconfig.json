@@ -1,13 +1,11 @@
 {
-  "extents": "../tsconfig",
-  "compilerOptions": {
-    "outDir": "lib"
-  },
+  "extentds": "tsconfig",
   "files": [
     "api-config.ts",
     "api-connect.ts",
     "api-error.ts",
     "api-es.ts",
-    "memory-memoryUsage.ts"
+    "execute-command.ts",
+    "monitor-memoryUsage.ts"
   ]
 }
