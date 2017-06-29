@@ -1,0 +1,6 @@
+POST http://10.65.193.100:3001/v1/notice/phone HTTP 1.1
+
+{
+  "phones":["13917926210"],
+  "content":"aaaaaa"
+}
