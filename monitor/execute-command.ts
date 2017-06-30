@@ -16,7 +16,7 @@ export function executeCommand(connect: ConnectConfig, command: string): Promise
             console.log('Stream :: close :: code: ' + code + ', sig nal: ' + signal);
             conn.end();
           }).on('data', function (data) {
-            console.log('STDOUT: ' + data);
+            // console.log('STDOUT: ' + data);
             resolve(data.toString())
           }).stderr.on('data', function (data) {
             reject(`exec command stderr error: ${data.toString()}`);
@@ -26,6 +26,6 @@ export function executeCommand(connect: ConnectConfig, command: string): Promise
     }).connect(connect);
 
     // event connect error.
-    conn.on('error', (err) => reject(`connect ssh error: ${err}`))
+    conn.on('error', (err) => { conn.end(); reject(`connect ssh error: ${err}`) })
   })
 };
